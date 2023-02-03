@@ -1,0 +1,53 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: rgb(140, 216, 158);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    padding-top: 17vh;
+    font-size: 8vh;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vh;
+    padding-top: 6vh;
+}
+
+section{
+    display: grid;
+    padding-top: 5vh;
+    grid-template-columns: repeat(4, 8rem);
+    grid-template-rows: repeat(4, 8rem);
+    gap: 4vmin;
+}
+
+button{
+    margin-top: 4vmin;
+    padding: 2vmin;
+    font-size: 2vmin;
+    border-radius: 4vmin;
+    border: 0.1vmin solid purple;
+    color: purple;
+  }
+  
+  button:hover {
+    color: white;
+    background-color: darkgray;
+  }
+  
+
+
