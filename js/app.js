@@ -8,11 +8,13 @@ const playerWrongCount = document.querySelector('span');
 
 //max number of wrongs player can have 
 const playerWrong = 8;
+
+//change text of the #
 playerWrongCount.innerHTML = playerWrong;
 
   /*----- constants -----*/
 
-//generate array of objects
+//generate array of objects --> was previously a getData function 
 const animals = [
     { imgSrc: "./images/bunny.jpg", name: "bunny" },
     { imgSrc: "./images/cat.jpg", name: "cat" },
@@ -33,16 +35,19 @@ const animals = [
   ];
 
 // put array animals into a function to then use in randomize 
-//create the randomize
-const randomize = function (){
-  const cardData = getData();
-  console.log(cardData);
+function getData() {
+  return animals
 };
+console.log(getData);
+
+//create the randomize
+const randomize = () => {
+  const cardData = getData();
+  cardData.sort(() => Math.random() -0.5);
+  console.log(cardData);
+}
 
 randomize();
-
-
-// random = Math.floor(Math.random() * 16);
 
 
 //   /*----- state variables -----*/
