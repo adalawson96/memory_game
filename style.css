@@ -60,7 +60,11 @@ img{
 .back-side {
     background: rgb(138, 91, 249);
     backface-visibility: hidden;
-   }
+}
+
+.toggleCard {
+    transform: rotateY(180deg);
+}
 
 button{
     margin-top: 4vmin;
@@ -76,9 +80,6 @@ button:hover {
     background-color: darkgray;
 }
 
-.toggleCard {
-    transform: rotateY(180deg);
-}
 
 
 
