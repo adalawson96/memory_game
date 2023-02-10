@@ -134,7 +134,6 @@ function checkCards() {
   //win condition:
   if (toggleCard.length === 16){
     messageEl.innerHTML = 'win!';
-    winner = true;
   }   
 };
 
