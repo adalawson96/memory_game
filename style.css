@@ -15,17 +15,17 @@ body {
 }
 
 header {
-    padding-top: 30vmax;
-    font-size: 4vmax;
+    padding-top: 15vh;
+    font-size: 4vh;
 }
 
 h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3vmax;
-    padding-top: 6vh;
-    padding-bottom: 3vh;
+    font-size: 3.5vh;
+    padding-top: 2vh;
+    padding-bottom: 1.5vh;
     color: red;
 }
 
@@ -35,7 +35,7 @@ section {
     grid-template-rows: repeat(4, 8rem);
     gap: 4vmin;
     padding-top: 4vmin;
-    perspective: 800px;
+    perspective: 65vh;
 } 
 
 .card {
@@ -68,7 +68,7 @@ img {
 }
 
 button {
-    margin-top: 4vmin;
+    margin-top: 2vh;
     padding: 2vmin;
     font-size: 2vmin;
     border-radius: 4vmin;

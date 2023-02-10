@@ -1,32 +1,19 @@
 # memory_game
-Unit Project 1 - game based
-Pseudocode to describe: Memory Game
+☐ <Your game's title>: A description of your game. Background info of the game is a nice touch.
+	Memory Game:
+	The game contains, in this case 16 cards animal themed. The cards are displayed facedown in rows and columns. The number of attempts displays how many tries you have left before losing.
 
--Define required constants
+	Februrary 1959, Memory Game was first published by Ravensburger. However, there were pre-existing versions dating back to the 16th century in Japan known as, asAwase or Kai-awase. These were matching pictures on painted shells.  
 
--Define required variables used to track the state of the game
-	-Create an Array of cards which contains two of each
-	-Use a winner variable to represent if the player won or the game is in play. 
+☐ Screenshot(s): Images of your actual game.
 
-Use 16 cards ( 4 rows , 4 columns), When the game starts, all cards are turned face down.
+☐ Technologies Used: 
+	JavaScript, HTML, CSS
 
-Click on one card to flip and stay
+☐ Getting Started: In this section include the link to your deployed game and any instructions you deem important.
+	The object of the game is to collect all of pairs. You must select one card and then another to match the images. You lose the game if you choose the wrong matching cards more than three times. Once you loose or win you may click the button Play Again to renew the game. 
 
-Then choose a second card to see if it’s a match ( STOP the player from choosing 3 cards)
+☐ Next Steps: Planned future enhancements (icebox items).
+	Adding sound to the the cards when they match 
+	Matching cards disapear 
 
-If the cards match, then they will stay face up. 
-
-If card faces do not match, the program displays a message, "Wrong". 
-OR 
-“Wrong” is displayed & next to it is the number of wrong tries
-
-
-Cards after a timed amount if not a match will turn back around.
-
-Player loses after 8 number of bad guesses 
-
-
-Player wins if all card faces are matched 
-
-
-Player clicks the replay button → button will randomize the cards so you get a new version 
