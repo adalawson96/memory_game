@@ -30,7 +30,6 @@ let match = 1;
 
 /*----- cached elements  -----*/
 const playAgainButton = document.querySelector('button');
-console.log(playAgainButton);
 // declares the state of the game:
 const messageEl = document.querySelector('h2');
 //declares the wrong count:
