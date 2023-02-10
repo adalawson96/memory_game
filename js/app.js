@@ -33,7 +33,6 @@ const playAgainButton = document.querySelector('button');
 console.log(playAgainButton);
 // declares the state of the game:
 const messageEl = document.querySelector('h2');
-// messageEl.innerHTML = state;
 //declares the wrong count:
 const playerWrongCount = document.querySelector('span');
 //changes text of the #:
@@ -155,16 +154,9 @@ function restart() {
 
 //visualize all state in the DOM
 function render() {
-  //hiding/showing play again button 
   // playAgainButton.disabled = !winner;
   if (!winner || playerWrong != 0) {
     playAgainButton.disabled = true;
   }
 };
-
-// // makes Play Again button hide:
-// function renderControls() {
-//     playAgainButton.style.visibility = winner ? 'visible' : 'hidden';
-//   };
-  
   cardGenerator();
