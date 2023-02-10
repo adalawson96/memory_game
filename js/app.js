@@ -162,9 +162,9 @@ function render() {
   }
 };
 
-// makes Play Again button hide:
-function renderControls() {
-    playAgainButton.style.visibility = winner ? 'visible' : 'hidden';
-  };
+// // makes Play Again button hide:
+// function renderControls() {
+//     playAgainButton.style.visibility = winner ? 'visible' : 'hidden';
+//   };
   
   cardGenerator();
