@@ -57,6 +57,7 @@ const randomize = () => {
 
 // setting the cards to compare
 const chooseCard = function (evt){
+  if (playerWrong <= 0) return;
   if (!firstCard){
     firstCard = evt.target
   } else {
@@ -98,6 +99,7 @@ const cardGenerator = () => {
 
 //check cards if they match:
 function checkCards() {
+  if (playerWrong <= 0) return;
   let firstAnimal = firstCard.parentElement.getAttribute('name');
   let secondAnimal = secondCard.parentElement.getAttribute('name');
   console.log('first', firstCard.parentElement);
@@ -125,7 +127,7 @@ function checkCards() {
   }
   //logs out the # of attempts left: 
   playerWrongCount.textContent = playerWrong;
-  if (playerWrong === 0){
+  if (playerWrong <= 0){
     messageEl.innerHTML = 'loose try again!';
   };
   firstCard = null;
@@ -138,6 +140,7 @@ function checkCards() {
 
 //restart the game:
 function restart() { 
+  console.log('restart');
   let cardData = randomize();
   let faces = document.querySelectorAll('.face');
   let cards = document.querySelectorAll('.card');
@@ -151,10 +154,6 @@ function restart() {
 };
 
 //visualize all state in the DOM
-function render() {
-  // playAgainButton.disabled = !winner;
-  if (!winner || playerWrong != 0) {
-    playAgainButton.disabled = true;
-  }
-};
+// function render() {
+// };
   cardGenerator();
